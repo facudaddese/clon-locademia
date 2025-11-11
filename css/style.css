@@ -53,7 +53,7 @@ header {
     display: flex;
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
-    transition: background-color 0.6s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .menu {
@@ -70,6 +70,7 @@ header {
     display: flex;
     justify-content: center;
     flex: 1;
+    padding: 5px;
 }
 
 .logo>a>img {
@@ -80,15 +81,26 @@ header {
     display: flex;
     justify-content: flex-end;
     flex: 1;
-    gap: 15px;
 }
 
-.iconos:nth-child(3) {
-    padding-right: 10px;
+.iconos span.material-symbols-outlined:not(#carrito) {
+    margin-right: 15px;
+}
+
+.iconos #carrito {
+    padding-right: 3px;
+}
+
+.iconos:last-child {
+    margin-right: 15px;
 }
 
 .material-symbols-outlined {
     color: white;
+}
+
+.cant-productos {
+    color: #FFFFFF;
 }
 
 .material-symbols-outlined:hover {
@@ -98,6 +110,9 @@ header {
 /* JS */
 
 .nav-bar {
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
     background-color: #FFFFFF;
     box-shadow: 0px 7px 19px -4px rgba(0, 0, 0, 0.7);
 }
@@ -108,7 +123,7 @@ header {
 
 .modal {
     position: absolute;
-    top: 66px;
+    top: 76px;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -150,7 +165,7 @@ header {
 
 .modalWhite {
     position: absolute;
-    top: 45px;
+    top: 55px;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -190,6 +205,16 @@ header {
     width: 120px;
 }
 
+.input-busqueda {
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+}
+
+.input-busqueda:focus {
+    outline: none;
+}
 
 .disable {
     display: none;
@@ -218,8 +243,11 @@ header {
 
 /* MAIN - TOP 10 */
 
+main {
+    margin-top: 640px;
+}
+
 .top-10 {
-    margin-top: 650px;
     padding-top: 90px;
     text-align: center;
 }
@@ -243,16 +271,16 @@ header {
     justify-content: space-between;
     box-shadow: 5px 16px 19px -11px rgba(0, 0, 0, 0.3);
     height: 500px;
-    transition: transform .2s ease-in-out;
+    transition: transform .3s ease-in-out;
     padding: 7px;
 }
 
-.swiper-slide img {
+.swiper-slide>.img {
     width: 100%;
     object-fit: cover;
 }
 
-.swiper-slide h3 {
+.h3-title {
     font-size: 0.95rem;
     font-weight: normal;
     color: #333;
@@ -261,13 +289,24 @@ header {
     padding: 0 5px;
 }
 
-.swiper-slide span {
+.span-container .span {
     font-weight: 600;
     color: #0088cc;
     font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
 }
 
-.swiper-slide .agregar button {
+.btn-agregar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.btn-agregar-container .btn {
     border-radius: 15px;
     border: none;
     padding: 8px;
@@ -276,7 +315,7 @@ header {
     color: #FFFFFF;
 }
 
-.swiper-slide .agregar button:hover {
+.btn-agregar-container button:hover {
     background-color: #015179;
     cursor: pointer;
 }
@@ -313,7 +352,7 @@ header {
     text-align: center;
 }
 
-/* OFERTAS */
+/* MAIN - OFERTAS */
 
 .ofertas {
     padding-top: 90px;
@@ -328,6 +367,73 @@ header {
     letter-spacing: 0.3px;
 }
 
+/* BUSQUEDA DE PRODUCTOS */
+
+.busqueda-container>h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #015179;
+}
+
+h1>strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.productos-json {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform .3s ease-out;
+    box-shadow: 5px 16px 19px -11px rgba(0, 0, 0, 0.3);
+}
+
+.productos-json:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.productos-container>p {
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.rta-json {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 27px;
+}
+
+.ir-al-inicio {
+    text-align: center;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+.ir-al-inicio>a {
+    font-size: 20px;
+    color: #214970;
+    text-decoration: none;
+}
+
+.ir-al-inicio>a:hover {
+    color: #015179;
+    font-weight: bold;
+}
+
 /* --------------------------------------- */
 
 /* FOOTER */
@@ -335,7 +441,7 @@ header {
 footer {
     text-align: center;
     margin-top: 90px;
-    padding: 10px 0 10px 0;
+    padding: 15px 0 10px 0;
     background-color: #f3f3f3;
 }
 

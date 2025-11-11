@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <title>Locademia | Tienda no oficial</title>
@@ -33,265 +34,305 @@
                 </div>
                 <div class="iconos">
                     <span class="material-symbols-outlined" id="buscar">search</span>
+                    <input type="text" class="disable input-busqueda" id="input-busqueda" placeholder="Buscar">
+                    <span class="material-symbols-outlined disable" id="close-busqueda">close_small</span>
                     <span class="material-symbols-outlined">account_circle</span>
                     <span class="material-symbols-outlined" id="carrito">shopping_cart</span>
+                    <span class="cant-productos"></span>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="wallpaper-container">
-            <div class="wallpaper"></div>
-        </section>
+        <div id="div-container">
+            <section class="wallpaper-container">
+                <div class="wallpaper"></div>
+            </section>
 
-        <section class="top-10" id="top-10">
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <h2>TOP 10</h2>
-                <div class="swiper swiper-top10">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta1.jpg" alt="Remera entrenamiento Kappa 2025">
-                            <h3>Remera entrenamiento Kappa 2025</h3>
-                            <div class="span">
-                                <span>$64.000</span>
+            <section class="top-10" id="top-10">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <h2>TOP 10</h2>
+                    <div class="swiper swiper-top10">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta1.jpg" alt="Remera entrenamiento Kappa 2025" class="img">
+                                <h3 class="h3-title">Remera entrenamiento Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$64.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
                             </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta2.jpg" alt="Campera pre match Kappa 2025" class="img">
+                                <h3 class="h3-title">Campera pre match Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$150.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta3.jpg" alt="Camiseta oficial Copa Libertadores 2025"
+                                    class="img">
+                                <h3 class="h3-title">Camiseta oficial Copa Libertadores 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$138.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta4.jpg" alt="Camiseta segunda alternativa Kappa 2025"
+                                    class="img">
+                                <h3 class="h3-title">Camiseta segunda alternativa Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$110.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta5.jpg" alt="Camiseta alternativa Kappa 2025" class="img">
+                                <h3 class="h3-title">Camiseta alternativa Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$110.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta6.jpg" alt="Buzo pre match Kappa 2025" class="img">
+                                <h3 class="h3-title">Buzo pre match Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$110.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta7.jpg" alt="Conjunto de bebe Kappa 2025" class="img">
+                                <h3 class="h3-title">Conjunto de bebe Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$80.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta8.jpg" alt="Remera de entrenamiento kids Kappa 2025"
+                                    class="img">
+                                <h3 class="h3-title">Remera de entrenamiento kids Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$55.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta9.jpg" alt="Campera de lluvia cielo Kappa 2025"
+                                    class="img">
+                                <h3 class="h3-title">Campera de lluvia cielo Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$150.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/camiseta3.jpg" alt="Camiseta oficial 2025" class="img">
+                                <h3 class="h3-title">Camiseta oficial 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$110.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta2.jpg" alt="Campera pre match Kappa 2025">
-                            <h3>Campera pre match Kappa 2025</h3>
-                            <div class="span">
-                                <span>$150.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta3.jpg" alt="Camiseta oficial Copa Libertadores 2025">
-                            <h3>Camiseta oficial Copa Libertadores 2025</h3>
-                            <div class="span">
-                                <span>$138.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta4.jpg" alt="Camiseta segunda alternativa Kappa 2025">
-                            <h3>Camiseta segunda alternativa Kappa 2025</h3>
-                            <div class="span">
-                                <span>$110.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta5.jpg" alt="Camiseta alternativa Kappa 2025">
-                            <h3>Camiseta alternativa Kappa 2025</h3>
-                            <div class="span">
-                                <span>$110.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta6.jpg" alt="Buzo pre match Kappa 2025">
-                            <h3>Buzo pre match Kappa 2025</h3>
-                            <div class="span">
-                                <span>$110.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta7.jpg" alt="Conjunto de bebe Kappa 2025">
-                            <h3>Conjunto de bebe Kappa 2025</h3>
-                            <div class="span">
-                                <span>$80.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta8.jpg" alt="Remera de entrenamiento kids Kappa 2025">
-                            <h3>Remera de entrenamiento kids Kappa 2025</h3>
-                            <div class="span">
-                                <span>$55.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta9.jpg" alt="Campera de lluvia cielo Kappa 2025">
-                            <h3>Campera de lluvia cielo Kappa 2025</h3>
-                            <div class="span">
-                                <span>$150.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/camiseta3.jpg" alt="Camiseta oficial 2025">
-                            <h3>Camiseta oficial 2025</h3>
-                            <div class="span">
-                                <span>$110.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
+
+                        <div class="swiper-button-next top10-next"></div>
+                        <div class="swiper-button-prev top10-prev"></div>
                     </div>
-
-                    <div class="swiper-button-next top10-next"></div>
-                    <div class="swiper-button-prev top10-prev"></div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="pasion-que-viaja" id="pasion-que-viaja">
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <div>
+            <section class="pasion-que-viaja" id="pasion-que-viaja">
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <h2>Una pasión que viaja</h2>
-                </div>
-                <div class="swiper swiper-pasion-que-viaja">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide pasion">
-                            <img src="assets/img/bolso1.jpg" alt="Bolso de viaje Kappa 2025">
-                            <h3>Bolso de viaje Kappa 2025</h3>
-                            <div class="span">
-                                <span>$41.000</span>
+                    <div class="swiper swiper-pasion-que-viaja">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide pasion">
+                                <img src="assets/img/bolso1.jpg" alt="Bolso de viaje Kappa 2025" class="img">
+                                <h3 class="h3-title">Bolso de viaje Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$41.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
                             </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
+                            <div class="swiper-slide">
+                                <img src="assets/img/botinero.jpg" alt="Botinero Kappa 2025" class="img">
+                                <h3 class="h3-title">Botinero Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$15.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/mochila.jpg" alt="Mochila de viaje Kappa 2025" class="img">
+                                <h3 class="h3-title">Mochila de viaje Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$41.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/bolso2.jpg" alt="Bolso escudo Racing Club" class="img">
+                                <h3 class="h3-title">Bolso escudo Racing Club</h3>
+                                <div class="span-container">
+                                    <span class="span">$91.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/bolso3.jpg" alt="Bolso Cilindro" class="img">
+                                <h3 class="h3-title">Bolso Cilindro</h3>
+                                <div class="span-container">
+                                    <span class="span">$83.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/botinero.jpg" alt="Botinero Kappa 2025">
-                            <h3>Botinero Kappa 2025</h3>
-                            <div class="span">
-                                <span>$15.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/mochila.jpg" alt="Mochila de viaje Kappa 2025">
-                            <h3>Mochila de viaje Kappa 2025</h3>
-                            <div class="span">
-                                <span>$41.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
+
+                        <div class="swiper-button-next pasion-que-viaja-next"></div>
+                        <div class="swiper-button-prev pasion-que-viaja-prev"></div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="ofertas" id="ofertas">
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <h2>OFERTAS</h2>
-                <div class="swiper swiper-ofertas">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/img/musculosa1.png" alt="Camiseta oficial Kappa 2025">
-                            <h3>Camiseta oficial Kappa 2025</h3>
-                            <div class="span">
-                                <span>$42.250</span>
+            <section class="ofertas" id="ofertas">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <h2>OFERTAS</h2>
+                    <div class="swiper swiper-ofertas">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/musculosa1.png" alt="Camiseta oficial Kappa 2025" class="img">
+                                <h3 class="h3-title">Camiseta oficial Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$42.250</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
                             </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
+                            <div class="swiper-slide">
+                                <img src="assets/img/short1.jpg" alt="Short arquero Kappa 2025" class="img">
+                                <h3 class="h3-title">Short arquero Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$40.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/medias1.jpg" alt="Medias de juego Kappa 2025" class="img">
+                                <h3 class="h3-title">Medias de juego Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$7.800</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/musculosa2.png" alt="Camiseta oficial alternativa Kappa 2025"
+                                    class="img">
+                                <h3 class="h3-title">Camiseta oficial alternativa Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$42.250</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/short2.jpg" alt="Short de juego Kappa 2025" class="img">
+                                <h3 class="h3-title">Short de juego Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$36.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/musculosa3.png" alt="Pechera Kappa 2025" class="img">
+                                <h3 class="h3-title">Pechera Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$26.000</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/short3.jpg" alt="Short entrenamiento Kappa 2025" class="img">
+                                <h3 class="h3-title">Short entrenamiento Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$33.800</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/musculosa4.png" alt="Pechera de entrenamiento Kappa 2025"
+                                    class="img">
+                                <h3 class="h3-title">Pechera de entrenamiento Kappa 2025</h3>
+                                <div class="span-container">
+                                    <span class="span">$37.700</span>
+                                </div>
+                                <div class="btn-agregar-container">
+                                    <button class="btn">AGREGAR</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/short1.jpg" alt="Short arquero Kappa 2025">
-                            <h3>Short arquero Kappa 2025</h3>
-                            <div class="span">
-                                <span>$40.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/medias1.jpg" alt="Medias de juego Kappa 2025">
-                            <h3>Medias de juego Kappa 2025</h3>
-                            <div class="span">
-                                <span>$7.800</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/musculosa2.png" alt="Camiseta oficial alternativa Kappa 2025">
-                            <h3>Camiseta oficial alternativa Kappa 2025</h3>
-                            <div class="span">
-                                <span>$42.250</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/short2.jpg" alt="Short de juego Kappa 2025">
-                            <h3>Short de juego Kappa 2025</h3>
-                            <div class="span">
-                                <span>$36.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/musculosa3.png" alt="Pechera Kappa 2025">
-                            <h3>Pechera Kappa 2025</h3>
-                            <div class="span">
-                                <span>$26.000</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/short3.jpg" alt="Short entrenamiento Kappa 2025">
-                            <h3>Short entrenamiento Kappa 2025</h3>
-                            <div class="span">
-                                <span>$33.800</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/img/musculosa4.png" alt="Pechera de entrenamiento Kappa 2025">
-                            <h3>Pechera de entrenamiento Kappa 2025</h3>
-                            <div class="span">
-                                <span>$37.700</span>
-                            </div>
-                            <div class="agregar">
-                                <button>AGREGAR</button>
-                            </div>
-                        </div>
+
+                        <div class="swiper-button-next ofertas-next"></div>
+                        <div class="swiper-button-prev ofertas-prev"></div>
                     </div>
-
-                    <div class="swiper-button-next ofertas-next"></div>
-                    <div class="swiper-button-prev ofertas-prev"></div>
                 </div>
+            </section>
+        </div>
+
+        <div id="busqueda-container" class="disable busqueda-container">
+            <h1>Resultados de la búsqueda: <strong id="strong"></strong></h1>
+            <div class="productos-container" id="productos-container"></div>
+            <div class="ir-al-inicio">
+                <a href="index.html" class="ir-al-inicio">Ir al inicio</a>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer id="suscribite">
@@ -322,6 +363,7 @@
         <p>&copy; 2025 Locademia. Tienda no oficial de Racing Club de Avellaneda.</p>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
