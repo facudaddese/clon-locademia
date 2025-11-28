@@ -1,7 +1,8 @@
+
 #  Clon Locademia - Tienda de Racing Club
 
 Este proyecto consiste en el desarrollo de un **e-commerce Front-End** que permite visualizar productos, abrir un modal con información detallada y gestionar un **carrito lateral**, desarrollado como práctica de programación web.  
-El objetivo principal es aplicar conceptos de **HTML, CSS, JavaScript**, manipulación del DOM, modularidad y uso de librerías externas.
+El objetivo principal es aplicar conceptos de **HTML, CSS, JavaScript**, manipulación del DOM, modularidad y uso de librerías externas. [Ver sitio](https://facudaddese.github.io/clon-locademia/)
 
 ---
 
