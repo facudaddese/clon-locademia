@@ -1,163 +1,146 @@
 [
     {
-        "id": 1,
         "nombre": "Remera entrenamiento Kappa 2025",
         "precio": 64000,
         "imagen": "assets/img/camiseta1.jpg",
         "categoria": "top10"
     },
     {
-        "id": 2,
         "nombre": "Campera pre match Kappa 2025",
         "precio": 150000,
-        "imagen": "assets/img/camiseta2.jpg",
+        "imagen": "assets/img/campera1.jpg",
         "categoria": "top10"
     },
     {
-        "id": 3,
         "nombre": "Camiseta oficial Copa Libertadores 2025",
         "precio": 138000,
         "imagen": "assets/img/camiseta3.jpg",
         "categoria": "top10"
     },
     {
-        "id": 4,
         "nombre": "Camiseta segunda alternativa Kappa 2025",
         "precio": 110000,
         "imagen": "assets/img/camiseta4.jpg",
         "categoria": "top10"
     },
     {
-        "id": 5,
         "nombre": "Camiseta alternativa Kappa 2025",
         "precio": 110000,
         "imagen": "assets/img/camiseta5.jpg",
         "categoria": "top10"
     },
     {
-        "id": 6,
         "nombre": "Buzo pre match Kappa 2025",
         "precio": 110000,
-        "imagen": "assets/img/camiseta6.jpg",
+        "imagen": "assets/img/buzo1.jpg",
         "categoria": "top10"
     },
     {
-        "id": 7,
         "nombre": "Conjunto de bebe Kappa 2025",
         "precio": 80000,
         "imagen": "assets/img/camiseta7.jpg",
         "categoria": "top10"
     },
     {
-        "id": 8,
         "nombre": "Remera de entrenamiento kids Kappa 2025",
         "precio": 55000,
         "imagen": "assets/img/camiseta8.jpg",
         "categoria": "top10"
     },
     {
-        "id": 9,
         "nombre": "Campera de lluvia cielo Kappa 2025",
         "precio": 150000,
-        "imagen": "assets/img/camiseta9.jpg",
+        "imagen": "assets/img/campera2.jpg",
         "categoria": "top10"
     },
     {
-        "id": 10,
         "nombre": "Camiseta oficial 2025",
         "precio": 110000,
         "imagen": "assets/img/camiseta3.jpg",
         "categoria": "top10"
     },
     {
-        "id": 11,
         "nombre": "Bolso de viaje Kappa 2025",
         "precio": 41000,
         "imagen": "assets/img/bolso1.jpg",
-        "categoria": "pasion"
+        "categoria": "pasionQueViaja"
     },
     {
-        "id": 12,
         "nombre": "Botinero Kappa 2025",
         "precio": 15000,
         "imagen": "assets/img/botinero.jpg",
-        "categoria": "pasion"
+        "categoria": "pasionQueViaja"
     },
     {
-        "id": 13,
         "nombre": "Mochila de viaje Kappa 2025",
         "precio": 41000,
         "imagen": "assets/img/mochila.jpg",
-        "categoria": "pasion"
+        "categoria": "pasionQueViaja"
     },
     {
-        "id": 14,
         "nombre": "Bolso escudo Racing Club",
         "precio": 91000,
         "imagen": "assets/img/bolso2.jpg",
-        "categoria": "pasion"
+        "categoria": "pasionQueViaja"
     },
     {
-        "id": 15,
         "nombre": "Bolso Cilindro",
         "precio": 83000,
         "imagen": "assets/img/bolso3.jpg",
-        "categoria": "pasion"
+        "categoria": "pasionQueViaja"
     },
     {
-        "id": 16,
-        "nombre": "Camiseta oficial Kappa 2025",
+        "nombre": "Camiseta basket oficial Kappa 2025",
         "precio": 42250,
-        "imagen": "assets/img/musculosa1.png",
+        "imagen": "assets/img/musculosa1.jpg",
         "categoria": "ofertas"
     },
     {
-        "id": 17,
         "nombre": "Short arquero Kappa 2025",
         "precio": 40000,
         "imagen": "assets/img/short1.jpg",
         "categoria": "ofertas"
     },
     {
-        "id": 18,
-        "nombre": "Medias de juego Kappa 2025",
-        "precio": 7800,
-        "imagen": "assets/img/medias1.jpg",
+        "nombre": "Remera polo salida Kappa 2025",
+        "precio": 40000,
+        "imagen": "assets/img/polo1.jpg",
         "categoria": "ofertas"
     },
     {
-        "id": 19,
-        "nombre": "Camiseta oficial alternativa Kappa 2025",
+        "nombre": "Camiseta basket alternativa Kappa 2025",
         "precio": 42250,
-        "imagen": "assets/img/musculosa2.png",
+        "imagen": "assets/img/musculosa2.jpg",
         "categoria": "ofertas"
     },
     {
-        "id": 20,
         "nombre": "Short de juego Kappa 2025",
         "precio": 36000,
         "imagen": "assets/img/short2.jpg",
         "categoria": "ofertas"
     },
     {
-        "id": 21,
-        "nombre": "Pechera Kappa 2025",
-        "precio": 26000,
-        "imagen": "assets/img/musculosa3.png",
+        "nombre": "Camiseta arquero Kappa 2025",
+        "precio": 66000,
+        "imagen": "assets/img/camiseta10.jpg",
         "categoria": "ofertas"
     },
     {
-        "id": 22,
+        "nombre": "Pechera Kappa 2025",
+        "precio": 26000,
+        "imagen": "assets/img/musculosa3.jpg",
+        "categoria": "ofertas"
+    },
+    {
         "nombre": "Short entrenamiento Kappa 2025",
         "precio": 33800,
         "imagen": "assets/img/short3.jpg",
         "categoria": "ofertas"
     },
     {
-        "id": 23,
         "nombre": "Pechera de entrenamiento Kappa 2025",
         "precio": 37700,
-        "imagen": "assets/img/musculosa4.png",
+        "imagen": "assets/img/musculosa4.jpg",
         "categoria": "ofertas"
     }
 ]

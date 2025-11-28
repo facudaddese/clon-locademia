@@ -223,19 +223,20 @@ header {
 .carrito-container {
     position: absolute;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     top: 76px;
     background: rgba(0, 0, 0, 0.6);
     z-index: 3000;
     min-width: 450px;
-    max-width: 500px;
-    gap: 3px;
-    overflow: auto;
+    max-width: 550px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    border: 1px solid #0088cc;
 }
 
 .img-container img {
     width: 60px;
-    padding: 3px 0 0 3px;
+    padding: 5px 0 0 5px;
 }
 
 .item {
@@ -256,12 +257,21 @@ header {
 .descripcion-container>.h3-producto {
     color: #FFFFFF;
     width: 250px;
-    padding-top: 3px;
+    padding-top: 5px;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .descripcion-container>.span-producto {
     color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.cerrar-carrito {
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgba(224, 224, 224, 0.6);
+    padding: 5px 0;
 }
 
 .total-container {
@@ -271,7 +281,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 10px;
+    padding: 10px 0 10px 0;
+    order: 100;
 }
 
 .total-container>p {
@@ -317,7 +328,18 @@ header {
     color: #FFFFFF;
 }
 
+.carrito-container-white {
+    top: 56px;
+    background: #FFFFFF;
+}
+
 /* --------------------------------------- */
+
+/* MAIN */
+
+main {
+    margin-top: 640px;
+}
 
 /* MAIN - WALLPAPER */
 
@@ -337,10 +359,6 @@ header {
 }
 
 /* MAIN - TOP 10 */
-
-main {
-    margin-top: 640px;
-}
 
 .top-10 {
     padding-top: 90px;
@@ -493,8 +511,7 @@ h1>strong {
     transition: transform .4s cubic-bezier(0.03, 0.16, 0.95, 1.02) .1s;
 }
 
-.productos-json:hover img {
-    cursor: pointer;
+.productos-json>img:hover {
     transform: scale(1.4);
 }
 
