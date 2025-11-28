@@ -1,0 +1,102 @@
+@media (max-width:1024px) {
+    #main {
+        margin-top: 430px;
+    }
+
+    #div-container .wallpaper {
+        height: 80vh;
+    }
+
+    #item-detail .item-modal {
+        justify-content: space-around;
+    }
+}
+
+/* ------------------------------------- */
+
+@media (max-width:768px) {
+    #main {
+        margin-top: 415px;
+    }
+
+    #div-container .wallpaper {
+        height: 65vh;
+    }
+
+    #item-detail .title-container-modal {
+        align-items: center;
+    }
+
+    #item-detail .title-container-modal {
+        text-align: center;
+    }
+
+    #item-detail .title-modal {
+        align-items: center;
+        height: 40vh;
+    }
+
+    #item-detail {
+        gap: 30px;
+    }
+
+    #item-detail .ir-al-inicio {
+        margin-top: 90px;
+    }
+}
+
+/* ------------------------------------- */
+
+@media (max-width:736px) {
+    #main {
+        margin-top: 410px;
+    }
+}
+
+/* ------------------------------------- */
+
+@media (max-width:667px) {
+    #main {
+        margin-top: 255px;
+    }
+
+    #div-container .wallpaper {
+        height: 52vh;
+    }
+
+    #top-10 h2,
+    #pasion-que-viaja h2,
+    #ofertas h2 {
+        font-size: 1.875rem;
+    }
+
+    #top-10 .swiper-slide>.img,
+    #pasion-que-viaja .swiper-slide>.img,
+    #ofertas .swiper-slide>.img {
+        width: auto;
+    }
+
+    #top-10 .swiper-slide,
+    #pasion-que-viaja .swiper-slide,
+    #ofertas .swiper-slide {
+        padding: 0;
+    }
+
+    #top-10 .swiper-wrapper,
+    #pasion-que-viaja .swiper-wrapper,
+    #ofertas .swiper-wrapper {
+        padding: 0;
+    }
+
+    #item-detail .title-container-modal>h2 {
+        font-size: 25px;
+    }
+}
+
+/* ------------------------------------- */
+
+@media (max-width:515px) {
+    #div-container .wallpaper {
+        height: 45vh;
+    }
+}

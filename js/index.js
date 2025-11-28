@@ -324,7 +324,11 @@ function volverAlInicio() {
     inputBusqueda.style.color = "#000000";
     inputBusqueda.style.borderBlockColor = "#000000";
     styleModal();
-    document.querySelector("main").style.marginTop = "640px";
+    if (innerWidth > 1024) {
+        document.querySelector("main").style.marginTop = "640px";
+    }else{
+        document.querySelector("main").style.marginTop = "415px";
+    }
     document.querySelector("footer").style.marginTop = "90px";
     setTimeout(() => { AOSAnimacion(); }, 200);
 }
@@ -942,3 +946,38 @@ function agregarEventListenersCarrito() {
         });
     });
 }
+
+//Evento para que el usuario se suscriba
+document.getElementById("arrow").addEventListener("click", () => {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.querySelector("#form input").value.trim())) {
+        Toastify({
+            text: "El correo es inválido",
+            duration: 2500,
+            gravity: "bottom",
+            position: "center",
+            style: {
+                background: "#015179",
+                color: "#FFFFFF",
+                fontSize: "16px",
+                padding: "15px",
+            }
+        }).showToast();
+    } else {
+        setTimeout(() => {
+            document.querySelector("#form input").value = "";
+        }, 1500);
+
+        Toastify({
+            text: "Suscrito correctamente!",
+            duration: 2500,
+            gravity: "bottom",
+            position: "center",
+            style: {
+                background: "#0088cc",
+                color: "#FFFFFF",
+                fontSize: "16px",
+                padding: "15px",
+            }
+        }).showToast();
+    }
+});

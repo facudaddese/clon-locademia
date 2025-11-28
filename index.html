@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <title>Locademia | Tienda no oficial</title>
@@ -54,7 +55,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <div id="div-container">
             <section class="wallpaper-container">
                 <div class="wallpaper"></div>
@@ -374,11 +375,11 @@
         <h3>SUSCRIBITE</h3>
         <p>Recibí nuestras ofertas! Ingresá tu email y recibirás en tu correo novedades y descuentos.</p>
         <div class="form-container">
-            <form action="">
+            <form action="" id="form">
                 <input type="email" id="email" placeholder="Email">
             </form>
             <div class="btn-container">
-                <span class="material-symbols-outlined">arrow_right_alt</span>
+                <span class="material-symbols-outlined" id="arrow">arrow_right_alt</span>
             </div>
         </div>
         <div class="redes-contacto">
