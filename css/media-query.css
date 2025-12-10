@@ -95,8 +95,18 @@
 
 /* ------------------------------------- */
 
-@media (max-width:515px) {
+@media (max-width:520px) {
+
+    #main {
+        margin-top: 200px;
+    }
+
     #div-container .wallpaper {
-        height: 45vh;
+        height: 35vh;
+    }
+
+    #item-detail .title-modal,
+    #item-detail .title-container-modal>h2 {
+        width: 100%;
     }
 }

@@ -164,6 +164,10 @@ buscar.addEventListener("click", () => {
 closeBusqueda.addEventListener("click", () => {
     inputBusqueda.classList.add("disable");
     closeBusqueda.classList.add("disable");
+    if (innerWidth < 580) 
+        document.querySelector(".logo").style.display = "block";
+        document.querySelector(".logo>a>img").style.display = "block";
+        nav.style.padding = "3px 0";
 });
 
 //Buscar productos y renderizarlos
@@ -283,6 +287,14 @@ inputBusqueda.addEventListener("keyup", async (e) => {
     }
 });
 
+//Cuando se toca en el lupa y se lo esta viendo desde un mobile, se esconde el logo
+buscar.addEventListener("click", () => {
+    if (innerWidth < 580)
+        document.querySelector(".nav-bar>.logo>a>img").style.display = "none";
+        document.querySelector(".logo>a>img").style.display = "none";
+        nav.style.padding = "10px 0";
+});
+
 //Estilos de la pantalla principal cuando aparezcan los productos
 function mainRtadosBusqueda() {
     if (!divContainer.matches(".disable")) return;
@@ -326,7 +338,7 @@ function volverAlInicio() {
     styleModal();
     if (innerWidth > 1024) {
         document.querySelector("main").style.marginTop = "640px";
-    }else{
+    } else {
         document.querySelector("main").style.marginTop = "415px";
     }
     document.querySelector("footer").style.marginTop = "90px";
