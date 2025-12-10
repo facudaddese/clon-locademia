@@ -101,9 +101,14 @@
         margin-top: 200px;
     }
 
-    #div-container .wallpaper {
+    #div-container .wallpaper-container {
         height: 35vh;
     }
+
+    #div-container .wallpaper {
+        height: 100%;
+    }
+
 
     #item-detail .title-modal,
     #item-detail .title-container-modal>h2 {
@@ -134,18 +139,5 @@
     #carrito-container #total-container {
         justify-content: space-around;
         gap: 0;
-    }
-}
-
-/* ------------------------------------- */
-
-@media (max-width:427px) {
-
-    #main {
-        margin-top: 90px;
-    }
-
-    #div-container .wallpaper {
-        height: 20vh;
     }
 }
