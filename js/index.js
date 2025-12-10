@@ -160,14 +160,14 @@ buscar.addEventListener("click", () => {
     closeBusqueda.classList.remove("disable");
 });
 
-//Icono cerrar busqueda
-closeBusqueda.addEventListener("click", () => {
+//Icono cerrar busqueda, reaparece el logo 
+closeBusqueda.addEventListener("click", (e) => {
     inputBusqueda.classList.add("disable");
     closeBusqueda.classList.add("disable");
-    if (innerWidth < 580) 
-        document.querySelector(".logo").style.display = "block";
-        document.querySelector(".logo>a>img").style.display = "block";
+    if (document.documentElement.clientWidth < 534) {
         nav.style.padding = "3px 0";
+        document.querySelector(".logo>a>img").style.display = "block";
+    }
 });
 
 //Buscar productos y renderizarlos
@@ -288,11 +288,11 @@ inputBusqueda.addEventListener("keyup", async (e) => {
 });
 
 //Cuando se toca en el lupa y se lo esta viendo desde un mobile, se esconde el logo
-buscar.addEventListener("click", () => {
-    if (innerWidth < 580)
-        document.querySelector(".nav-bar>.logo>a>img").style.display = "none";
-        document.querySelector(".logo>a>img").style.display = "none";
+buscar.addEventListener("click", (e) => {
+    if (document.documentElement.clientWidth < 534) {
         nav.style.padding = "10px 0";
+        document.querySelector(".logo>a>img").style.display = "none";
+    }
 });
 
 //Estilos de la pantalla principal cuando aparezcan los productos
